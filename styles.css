@@ -114,18 +114,20 @@ html {
   
   
   .play {
-    background-image: url(./assets/play.svg);
+    background-image: url(./assets/icons8-play-button-100.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 160px;
-    height: 160px;
+    width: 100px;
+    height: 100px;
     cursor: pointer;
     transition: 0.9s;
+    color: #F9B208;
   }
   
   .play.is-active {
-    background-image: url(./assets/pause.svg);
+    background-image: url(./assets/icons8-pause-button-100.png);
     transition: 0.9s;
+    color: #F9B208;
   }
   
   .footer-data {
