@@ -22,7 +22,8 @@ html {
     margin: 0 10px;
     align-items: center;
     align-content: center;
-  }
+    }
+  
   
   nav {
     width: 50%;
@@ -30,10 +31,27 @@ html {
   
   .nav-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    
   }
   
-  .nav-item,
+  .nav-item {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: transparent;
+    color: rgba(225, 188, 142, 0.7);
+    transition: 0.6s all ease;
+    position: relative;
+    z-index: 2;
+    border-radius: 13px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+
   .footer-link {
     text-decoration: none;
     transition: color 0.5s;
@@ -46,36 +64,20 @@ html {
     color: #F9B208;
   }
   
-  .bird:hover,
-  .bird.is-active,
-  .nav-item:hover,
   .footer-link:hover,
-  .play:hover,
-  .logo:hover {
+  .play:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
       contrast(87%);
     transition: 1s;
   }
-  
-  .bird {
-    background-image: url(./assets/logo.svg);
-    width: 50px;
-    height: 50px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    cursor: pointer;
-  }
-  
-  .nav-item:hover{
-    box-shadow: 0 0.5em 0.5em -0.4em #bdae82;
-    transform: translatey(0.5em);
-    transition: 0,8s;
-  }
-  
-  .bird:hover{
-    transform: translate(150px, 0);
-    transition: cubic-bezier(0, 1.18, 0.99, 0.01);
-    transition: 3s;
+
+  .nav-list img { width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: -9px;
+  position: absolute;
+  top: 0;
+  left: 0;
   }
   
   main {
